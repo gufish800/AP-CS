@@ -1,4 +1,3 @@
-
 public class StartingPos{
 	
 	public static int[] startingPostition(String primary,String pattern){
@@ -8,7 +7,7 @@ public class StartingPos{
 				
 		for (int i = 0; i < primary.length();i++){
 			String ss = primary.substring(i);
-			int index = ss.indexOf(pattern);
+			int index = ss.indexOf(pattern); //locates substring and gives index number
 
 			if (index == 0){
 	
@@ -21,7 +20,6 @@ public class StartingPos{
 			}
 			arr[nfind] = i;
 			nfind++;
-			
 				
 			}			
 			if (index == -1){
@@ -34,8 +32,7 @@ public class StartingPos{
 		return arr;
 	}
 			
-	public static void main (String[] args){
-				
+	public static void main (String[] args){				
 		String primary = (args[0]);
 		String pattern = (args[1]);
 	    int[] indices = startingPostition(primary,pattern);
