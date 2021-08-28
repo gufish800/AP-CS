@@ -7,12 +7,11 @@ public class Bracket{
 			char ch = s.charAt(i);
 			
 			if(ch == '{')
-				 n = n + 1;
+				 n = n + 1; 
 			if(ch == '}')
 				n = n - 1;
 			if (n<0)
-				return false;
-			
+				return false;  
 		}
 		if (n==0)
 			return true;
@@ -29,7 +28,5 @@ public class Bracket{
 		
 		System.out.println(s + " these bracket are " + t + " because they are matching!!!");
 	}
-	
-
 }
 	
