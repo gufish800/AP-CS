@@ -3,10 +3,12 @@ public class Fibonacci{
     public static boolean fib (int m) {
         
         boolean result = false;
-		int first=1; 
+	
+	int first=1; 
         int second=1;
         int third=first+second;
-		if (m == 1)
+		
+	    	if (m == 1)
 			result = true;
 		//Loop till more than incoming number
         while(third <= m){
